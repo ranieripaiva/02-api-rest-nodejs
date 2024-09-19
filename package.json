@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "- [x] O usuário deve poder criar uma nova transação;\r - [x] O usuário deve poder obter um resumo da sua conta;\r - [x] O usuário deve poder listar todas transações que já ocorreram;\r - [x] O usuário deve poder visualizar uma transação única;",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx src/server.ts",
     "lint": "eslint src --ext .ts --fix",
@@ -31,6 +34,7 @@
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
     "knex": "^3.1.0",
+    "pg": "^8.13.0",
     "sqlite3": "^5.1.7",
     "zod": "^3.23.8"
   }
