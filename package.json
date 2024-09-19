@@ -1,0 +1,37 @@
+{
+  "name": "02-api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "- [x] O usuário deve poder criar uma nova transação;\r - [x] O usuário deve poder obter um resumo da sua conta;\r - [x] O usuário deve poder listar todas transações que já ocorreram;\r - [x] O usuário deve poder visualizar uma transação única;",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.5.4",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.57.0",
+    "supertest": "^7.0.0",
+    "tsc": "^2.0.4",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "02-api-rest-nodejs": "file:",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.23.8"
+  }
+}
